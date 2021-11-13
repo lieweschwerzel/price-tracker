@@ -1,0 +1,7 @@
+beautifulsoup4==4.10.0
+idna==3.3
+price-tracker==0.6.1
+python-dotenv==0.19.2
+requests==2.26.0
+soupsieve==2.3.1
+urllib3==1.26.7
