@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
-product_id = "supradyns"
+product_id = "ALPECIN"
 query = "https://www.ah.nl/zoeken?query="
 HOURS = 1
 SLEEPTIME = HOURS * 3600  # 3600 seconds in 1 hour
@@ -16,7 +16,7 @@ def main():
     price = check_price()
     print(product_id + " " + price)
     # =============================================================================
-    # KEEP SEARCHING EVERY X HOURS until "1+1 gratis" offer is found, send email, detainheroku ps:scale worker=1
+    # KEEP SEARCHING EVERY X HOURS until "1+1 gratis" offer is found, send email, detain heroku ps:scale worker=1
     # =============================================================================
     while True:    
         if has_one_plus_one():
