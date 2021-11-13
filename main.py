@@ -5,17 +5,8 @@ from datetime import datetime
 import smtplib, time
 import os
 from dotenv import load_dotenv, find_dotenv
+
 load_dotenv(find_dotenv())
-from fastapi import FastAPI
-
-app = FastAPI()
-
-
-@app.get("/")
-async def root():
-    price = check_price()
-    return {send_gmail(price)}
-
 product_id = "ALPECIN"
 query = "https://www.ah.nl/zoeken?query="
 HOURS = 1
